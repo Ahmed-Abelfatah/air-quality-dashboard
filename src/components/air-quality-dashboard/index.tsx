@@ -40,11 +40,19 @@ const AirQualityDashboard: React.FC = () => {
   }
 
   const handleStartDateChange = (date: Date | null) => {
-    if (date) setStartDate(date)
+    if (date && date <= endDate) {
+      setStartDate(date)
+    } else {
+      alert('Start date must not be later than end date.')
+    }
   }
 
   const handleEndDateChange = (date: Date | null) => {
-    if (date) setEndDate(date)
+    if (date && date >= startDate) {
+      setEndDate(date)
+    } else {
+      alert('End date must not be earlier than start date.')
+    }
   }
 
   return (
@@ -92,7 +100,11 @@ const AirQualityDashboard: React.FC = () => {
           </div>
         )}
 
-        {data && data.data.length > 0 && (
+        {!isLoading && data && data.data.length === 0 && (
+          <div className="chart-no-data">No data available for the selected range.</div>
+        )}
+
+        {!isLoading && data && data.data.length > 0 && (
           <div className="chart-data">
             <Line
               data={chartData}

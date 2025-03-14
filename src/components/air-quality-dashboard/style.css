@@ -76,3 +76,11 @@
 .chart-data {
   height: 450px;
 }
+
+.chart-no-data {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 2rem;
+  color: var(--text-color);
+}
