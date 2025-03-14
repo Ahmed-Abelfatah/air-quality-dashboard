@@ -1,0 +1,50 @@
+/* DatePickerInput.css */
+
+.datepicker-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.datepicker-label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.datepicker-wrapper,
+.datepicker-custom-wrapper {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.datepicker-input {
+  color: var(--text-color);
+  width: 100% !important;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--card-bg);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.datepicker-input:focus {
+  outline: none;
+  border-color: var(--border-color);
+  box-shadow: 0 0 0 2px var(--box-shadow-color);
+}
+
+.datepicker-calendar {
+  font-size: 14px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px var(--box-shadow-color);
+}
+
+.datepicker-popper {
+  z-index: 9999;
+}

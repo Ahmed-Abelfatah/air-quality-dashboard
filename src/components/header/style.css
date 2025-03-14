@@ -1,0 +1,14 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+}
