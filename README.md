@@ -1,4 +1,4 @@
-## :ledger: Air Quality dashboard list API
+## :ledger: Air Quality dashboard
 
 ## Important links
 - :rocket: :rocket: [Demo](https://youtu.be/repogywkzJA) :point_left: :point_left:
